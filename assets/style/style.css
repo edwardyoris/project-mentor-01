@@ -13,7 +13,8 @@
     /* Fonts */
     ---body-fonts-paragraph: 'Inter', sans-serif;
     ---card-fonts-title: 'Raleway', sans-serif;
-    ---font-size: 15px;
+    ---footer-fonts: 'Outfit', sans-serif;
+    ---font-size: 1.7rem;
 
     /* Font weight */
     ---font-regular: 400;
@@ -28,8 +29,7 @@ html {
 }
 
 body {
-    font-family: var(---body-fonts);
-    font-size: var(---font-size);
+    font-family: var(---footer-fonts);
     background-color: var(---color-two);
 }
 
@@ -44,21 +44,21 @@ body {
 .main__html,
 div,
 img {
-    border-radius: 10px;
+    border-radius: 3%;
 }
 
 .card__qr {
     background-color: var(---color-one);
-    width: 300px;
+    width: 375px;
     height: auto;
-    padding: 12px;
-    box-shadow: 0 0 80px var(---color-three);
+    padding: 20px;
+    margin: 10vh auto;
+    box-shadow: 0 0 30px var(---color-three);
 }
 
 .card__qr,
 h1,
-p,
-.footer_html {
+p, .footer_html {
     text-align: center;
 }
 
@@ -69,12 +69,22 @@ p,
 
 .card__title {
     font-family: var(---card-fonts-title);
-    font-size: var(---font-bold);
+    font-size: var(---font-size);
+    font-weight: var(---font-bold);
+    color: var(---color-for);
+    line-height: 1.3;
+  
+
 }
 
 .card__paragraph {
     font-family: var(---body-fonts-paragraph);
-    font-size: var(---font-regular);
-    color: var(---color-three);
-    text-shadow: .5px .5px var(---color-two);
+    font-weight: var(---font-regular);
+    color: var(---color-three);    
+    margin: 25px 30px 40px;
+    letter-spacing: 1.3px;
+}
+
+.footer_html {
+    font-size: 11px;
 }
